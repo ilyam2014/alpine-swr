@@ -19,7 +19,22 @@ Alpine.magic('swr', (el, {Alpine, effect, cleanup}) => {
 ```
 
 ## Usage
-Todo
+```html
+<div x-data="{todos: {}}"
+     x-init="
+     todos = $swr(`https://jsonplaceholder.typicode.com/todos`);
+     ">
+    <p x-show="!todos.data">Loading...</p>
+    <div x-show="todos.data">
+        <template x-for="todo in todos.data" :key="todo.id">
+            <p>Title: <span x-text="todo.title"></span></p>
+        </template>
+    </div>
+</div>
+
+```
+
+TODO
 (For now you can refer to the original documentation [swrv](https://github.com/Kong/swrv))
 
 ## Credits
