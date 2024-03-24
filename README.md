@@ -20,3 +20,8 @@ Alpine.magic('swr', (el, {Alpine, effect, cleanup}) => {
 
 ## Usage
 Todo
+(For now you can refer to the original documentation [swrv](https://github.com/Kong/swrv))
+
+## Credits
+
+Original library was built by [Kong](https://github.com/Kong)
