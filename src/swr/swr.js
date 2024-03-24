@@ -155,7 +155,7 @@ function swr(Alpine, onMount, onDestroy, ...args) {
       let promiseFromCache = PROMISES_CACHE.get(keyVal);
       if (!promiseFromCache) {
         let fetcherArgs = Array.isArray(keyVal) ? keyVal : [keyVal];
-        let newPromise = fetcher(...fetcherArgs);
+        let newPromise = typeof fetcher === "function" ? fetcher(...fetcherArgs) : new Promise((res) => res(fetcher));
         PROMISES_CACHE.set(keyVal, newPromise, config.dedupingInterval);
         await mutate(keyVal, newPromise, config.cache, ttl);
       } else {
