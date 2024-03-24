@@ -13,9 +13,7 @@ npm i alpine-swr
 ```js
 import swr from "alpine-swr";
 
-Alpine.magic('swr', (el, {Alpine, effect, cleanup}) => {
-    return (...args) => swr(Alpine, effect, cleanup, ...args)
-})
+Alpine.magic('swr', swr)
 ```
 
 ## Usage
