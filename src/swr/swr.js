@@ -260,5 +260,8 @@ function isPromise(p) {
   return p !== null && typeof p === "object" && typeof p.then === "function";
 }
 
+export default function (_, { Alpine, effect, cleanup }) {
+  return (...args) => swr(Alpine, effect, cleanup, ...args);
+}
+
 export { mutate };
-export default swr;

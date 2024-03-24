@@ -1,5 +1,5 @@
 import SWRVCache from "./cache";
-import swr, {mutate} from "./swr.js";
+import swr, { mutate } from "./swr.js";
 
-export {SWRVCache, mutate}
-export default swr
+export { SWRVCache, mutate };
+export default swr;
