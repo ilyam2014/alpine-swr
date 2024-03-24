@@ -1,3 +1,22 @@
 # SWR data fetching library for Alpine.js
 
 This is basically port of SWRV library for Vue 3
+
+## Installation
+
+1. Install the library
+```bash
+npm i alpine-swr
+```
+2. Register custom Alpine.js magic property
+
+```js
+import swr from "alpine-swr";
+
+Alpine.magic('swr', (el, {Alpine, effect, cleanup}) => {
+    return (...args) => swr(Alpine, effect, cleanup, ...args)
+})
+```
+
+## Usage
+Todo
