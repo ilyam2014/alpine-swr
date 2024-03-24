@@ -1,6 +1,6 @@
 {
   "name": "alpine-swr",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "description": "SWR data fetching library for Alpine.js",
   "main": "src/swr/index.js",
   "scripts": {
@@ -20,8 +20,5 @@
   "bugs": {
     "url": "https://github.com/hiddenLadder/alpine-swr/issues"
   },
-  "homepage": "https://github.com/hiddenLadder/alpine-swr#readme",
-  "devDependencies": {
-    "alpinejs": "^3.13.7"
-  }
+  "homepage": "https://github.com/hiddenLadder/alpine-swr#readme"
 }

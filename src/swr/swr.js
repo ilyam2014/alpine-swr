@@ -1,6 +1,5 @@
 import SWRVCache from "./cache";
 import webPreset from "./lib/web-preset";
-import Alpine from "alpinejs";
 
 const DATA_CACHE = new SWRVCache();
 const REF_CACHE = new SWRVCache();
@@ -92,7 +91,7 @@ async function mutate(key, res, cache, ttl) {
   return newData;
 }
 
-function swr(onMount, onDestroy, ...args) {
+function swr(Alpine, onMount, onDestroy, ...args) {
   let key;
   let fn;
   let config = { ...defaultConfig };
