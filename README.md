@@ -18,10 +18,7 @@ Alpine.magic('swr', swr)
 
 ## Usage
 ```blade
-<div x-data="{todos: {}}"
-     x-init="
-     todos = $swr(`https://jsonplaceholder.typicode.com/todos`);
-     ">
+<div x-data="{todos: $swr('https://jsonplaceholder.typicode.com/todos')}">
     <p x-show="!todos.data">Loading...</p>
     <div x-show="todos.data">
         <template x-for="todo in todos.data" :key="todo.id">
