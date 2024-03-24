@@ -19,7 +19,7 @@ Alpine.magic('swr', (el, {Alpine, effect, cleanup}) => {
 ```
 
 ## Usage
-```html
+```blade
 <div x-data="{todos: {}}"
      x-init="
      todos = $swr(`https://jsonplaceholder.typicode.com/todos`);
