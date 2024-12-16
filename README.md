@@ -1,6 +1,5 @@
 # SWR data fetching library for Alpine.js
 
-This is basically port of SWRV library for Vue 3
 
 ## Installation
 
@@ -28,6 +27,3 @@ Alpine.magic('swr', swr)
 </div>
 
 ```
-
-TODO
-(For now you can refer to the original documentation [swrv](https://github.com/Kong/swrv))
